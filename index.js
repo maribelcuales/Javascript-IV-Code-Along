@@ -180,6 +180,13 @@ console.log(daughter.job());
 console.log(daughter.study());
 
 
+// Parent don't have access to child methods 
+// In the example, mom do not have access to daughter's study method 
+// Chain of inheritance goes down but does not go back up 
+
+// Give mom a grandchild 
+// Inherit attributes from parent and child 
+// have special attributes and own method
 
 
 
