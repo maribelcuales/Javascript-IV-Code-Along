@@ -219,3 +219,21 @@ const grandBaby = new GrandChild({
   toy: 'rattle'
 })
 
+const fish = new Pet({
+  name: 'Goldie',
+  location: 'fishbowl',
+  work: 'swimming like its my job',
+  major: 'bubble formation',
+  toy: 'sunken ship',
+  food: 'fish food'
+}); 
+
+console.log(grandBaby.job());
+console.log(grandBaby.study());
+console.log(grandBaby.play()); 
+
+console.log(fish.job());
+console.log(fish.study());
+console.log(fish.play()); 
+console.log(fish.eat());
+
