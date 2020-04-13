@@ -237,3 +237,38 @@ console.log(fish.study());
 console.log(fish.play()); 
 console.log(fish.eat());
 
+
+///////		Skeleton of class syntax		/////////
+
+class Parent{
+  constructor(param){
+    // assign attributes here
+  }
+  // methods go here
+}
+
+
+// child 
+class Child extends Parent{
+  constructor(param){
+    super(param);
+    // assign any special child attributes here
+  }
+  // add any specific child methods here
+}
+
+
+// create objects here
+const something = new Parent({
+  // key value pairs
+})
+
+const somethingElse = new Child({
+  // key value pairs that are inherited from parent
+  // key value pairs that are special to the child
+})
+
+
+// invoke methods here 
+
+
