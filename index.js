@@ -272,3 +272,62 @@ const somethingElse = new Child({
 // invoke methods here 
 
 
+//////////    REVIEW    //////////////
+
+/*
+Q: Difference between parameters vs arguments
+- parameters/ params are place holders while arguments are actual values. 
+
+parameters: placeholder values function() inside of these parenthesis are called parameters
+arguments: are the values that get passed in 
+
+function add(num1, num2){  // the parameters are num1 and num2 they hold the place for the numbers that will be passed in 
+  return num1 + num2
+}
+
+add(2, 3); // 2 and 3 are the arguments 
+console.log(add(2,3));  // to see the result in the console 
+
+
+// object 
+
+object {
+// key/ value pairs (these are called properties)
+
+// methods - these are functions that belong to an object 
+}
+
+
+// Arrays []  
+// think of an array of information
+// Order matters in an array 
+// the computer assigns an index to every item in the array - that index starts at 0 
+
+
+// Callbacks + Higher Order Functions 
+// callbacks are passed into higher order functions
+// callbacks are given and higher order functions receive 
+
+function maths(num1, num2, cb){
+  return cb(num1, num2);
+  // add(2, 3); 
+  // subtract(4, 2); 
+}
+
+const add = (num1, num2) =>{
+  return num1 + num2;
+}      
+
+const subtract = (num1, num2) =>{
+  return num1 - num2;  
+}
+
+maths(2, 3, add);  // 5
+maths(4, 2, subtract);  // 2 
+
+// REVIEW:  loops and conditional 
+// conditional statements = if and else statements  
+
+
+*/
+
