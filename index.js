@@ -76,5 +76,19 @@ function Child(childAttributes) {  // same with function Child(name, location, p
 Child.prototype = Object.create(Pet.prototype); // inheriting methods from parent
  
 
+////////////    class   /////////////
+
+// classes don't exist in Javascript. They are syntactical sugar/ syntax. Classes are just a nicer way to write this stuff. 
+
+// classes are not hoisted - that means if we are putting information above a class we have referenced it will not work.
+// they use strict - it prevents window binding, forces us to write cleaner code with errors if we do not 
+// Methods are a special syntax. Methods no longer need the function keyword. They are also built into our constructor functions. 
+// A constructor function is visible 
+
+// Child Classes 
+// extends links up the dunder proto - it tells us where we came from 
+// extends tells super where to go or what to super to 
+//extends + super do what object.create and parent.call did 
+
 
 
