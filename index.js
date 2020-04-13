@@ -50,5 +50,20 @@ Q: What is prototypical inheritance?
 - Everything in JS is an object. 
 */
 
+// Constructor Function (review)
+// the old way
+
+
+function Pet(attributes) {
+  this.name = attributes.name;
+  this.location = attributes.location;
+  this.phrase = attributes.phrase;
+}
+
+Pet.prototype.speak = function() {
+  return `${this.name} says ${this.phrase}`;
+}
+
+
 
 
