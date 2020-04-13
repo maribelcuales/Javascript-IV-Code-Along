@@ -105,6 +105,20 @@ class Pet{
   }
 }
 
+//Creating a Child using a class syntax
+// use 'extends' to tell the Child who is its parent
+// super - to make the Child inherit the parent's attributes
+// super and extends do what .call and .create did
+
+
+class Child extends Pet{
+  constructor(childAttributes){
+    super(childAttributes)
+    // any special attributes for the Child go here
+  } // any special methods for the child goes here
+}
+
+
 
 
 
