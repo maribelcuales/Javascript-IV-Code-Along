@@ -168,6 +168,18 @@ const mom = new Parent({
   work: 'Computer Scientist'
 });
 
+const daughter = new Child({
+  name: 'Sara',
+  location: 'USA',
+  work: 'Student',
+  major: 'Bio Chemistry'
+})
+
+console.log(mom.job());
+console.log(daughter.job());
+console.log(daughter.study());
+
+
 
 
 
