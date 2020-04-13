@@ -64,6 +64,17 @@ Pet.prototype.speak = function() {
   return `${this.name} says ${this.phrase}`;
 }
 
+// Creating a Child(review)
+// the old way 
+
+
+function Child(childAttributes) {  // same with function Child(name, location, phrase)
+  Pet.call(this, childAttributes) // binding this to parent
+  this.isChild = childAttributes.isChild; // this will be for any special attributes to the child
+}
+
+Child.prototype = Object.create(Pet.prototype); // inheriting methods from parent
+ 
 
 
 
