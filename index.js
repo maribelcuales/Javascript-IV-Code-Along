@@ -211,4 +211,11 @@ class Pet extends GrandChild{
   }
 }
 
+const grandBaby = new GrandChild({
+  name: 'Brit',
+  location: 'USA',
+  work: 'a baby',
+  major: 'first words',
+  toy: 'rattle'
+})
 
