@@ -53,7 +53,7 @@ Q: What is prototypical inheritance?
 // Constructor Function (review)
 // the old way
 
-
+/*
 function Pet(attributes) {
   this.name = attributes.name;
   this.location = attributes.location;
@@ -74,7 +74,8 @@ function Child(childAttributes) {  // same with function Child(name, location, p
 }
 
 Child.prototype = Object.create(Pet.prototype); // inheriting methods from parent
- 
+*/
+
 
 ////////////    class   /////////////
 
@@ -89,6 +90,21 @@ Child.prototype = Object.create(Pet.prototype); // inheriting methods from paren
 // extends links up the dunder proto - it tells us where we came from 
 // extends tells super where to go or what to super to 
 //extends + super do what object.create and parent.call did 
+
+
+//convert to class syntax (class is es6 syntax)
+
+class Pet{
+  constructor(attributes){
+    this.name = attributes.name;
+    this.location = attributes.location;
+    this.phrase = attributes.phrase; 
+  } // method go here 
+  speak(){
+    return `${this.name} says ${this.phrase}`;
+  }
+}
+
 
 
 
