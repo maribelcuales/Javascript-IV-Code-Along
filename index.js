@@ -200,4 +200,15 @@ class GrandChild extends Child{
   }
 }
 
+class Pet extends GrandChild{
+  constructor(attrs){
+    super(attrs)  // this replaces .ca;;
+    // any special attributes go here
+    this.food = attrs.food;
+  } // any special methods for pet go here 
+  eat(){
+    return `${this.name} eats ${this.food}`;
+  }
+}
+
 
