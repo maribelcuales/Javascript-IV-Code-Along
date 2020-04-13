@@ -162,6 +162,12 @@ class Child extends Parent{
   }
 }
 
+const mom = new Parent({
+  name: 'Mom',
+  location: 'USA',
+  work: 'Computer Scientist'
+});
+
 
 
 
