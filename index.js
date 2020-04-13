@@ -184,9 +184,20 @@ console.log(daughter.study());
 // In the example, mom do not have access to daughter's study method 
 // Chain of inheritance goes down but does not go back up 
 
+
 // Give mom a grandchild 
 // Inherit attributes from parent and child 
 // have special attributes and own method
 
+class GrandChild extends Child{
+  constructor(other){
+    super(other) // this replaces Parent.call
+    // any special attribute for the grandchild go here
+    this.toy = other.toy;  
+  } // any special methods for the grandchild go here
+  play(){
+    return `${this.name} plays with ${this.toy}`;
+  }
+}
 
 
