@@ -151,4 +151,17 @@ class Parent{
 	}
 }
 
+class Child extends Parent{
+  constructor(attributes){
+    super(attributes) // this replaces Parent.call
+    // special attributes for the Child
+    this.major = attributes.major;
+  } // special methods for the child
+  study(){
+    return `${this.name} is studying ${this.major}`;
+  }
+}
+
+
+
 
