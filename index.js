@@ -119,6 +119,22 @@ class Child extends Pet{
 }
 
 
+const petOne = new Pet({
+  name: 'Ada',
+  location: 'Canada',
+  phrase: 'woof woof'
+})
+
+const petTwo = new Child({
+  name: 'Noa',
+  location: 'Canada',
+  phrase: 'bark bark'
+})
+
+
+console.log(petOne.speak());
+console.log(petTwo.speak());
+
 
 
 
