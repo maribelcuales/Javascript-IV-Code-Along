@@ -94,6 +94,7 @@ Child.prototype = Object.create(Pet.prototype); // inheriting methods from paren
 
 //convert to class syntax (class is es6 syntax)
 
+/*
 class Pet{
   constructor(attributes){
     this.name = attributes.name;
@@ -104,13 +105,14 @@ class Pet{
     return `${this.name} says ${this.phrase}`;
   }
 }
+*/
 
 //Creating a Child using a class syntax
 // use 'extends' to tell the Child who is its parent
 // super - to make the Child inherit the parent's attributes
 // super and extends do what .call and .create did
 
-
+/*
 class Child extends Pet{
   constructor(childAttributes){
     super(childAttributes)
@@ -130,11 +132,23 @@ const petTwo = new Child({
   location: 'Canada',
   phrase: 'bark bark'
 })
+*/
+
+// console.log(petOne.speak());
+// console.log(petTwo.speak());
 
 
-console.log(petOne.speak());
-console.log(petTwo.speak());
+// Write  a class from scratch 
 
-
+class Parent{
+	constructor(attributes){
+		this.name = attributes.name;
+		this.location = attributes.location;
+		this.work = attributes.work;
+	} // write methods here
+	job(){
+		return `${this.name} is a ${this.work}`;
+	}
+}
 
 
